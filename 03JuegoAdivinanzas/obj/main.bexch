@@ -1,0 +1,19 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+C:\GNAT\2021\bin\03JuegoAdivinanzas\juego.gpr
+20221017092740 6f63154fe8750bf3728ddf9b9de55f5e
+[BOUND OBJECT FILES]
+C:\GNAT\2021\bin\03JuegoAdivinanzas\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LC:\GNAT\2021\bin\03JuegoAdivinanzas\obj\
+-LC:\GNAT\2021\bin\03JuegoAdivinanzas\obj\
+-LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000
