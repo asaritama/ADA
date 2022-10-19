@@ -6,20 +6,15 @@ A -march=x86-64
 P ZX
 
 RN
-RV NO_DIRECT_BOOLEAN_OPERATORS
 RV NO_FLOATING_POINT
 RV NO_IO
-RV NO_STANDARD_STORAGE_POOLS
-RV NO_DEFAULT_INITIALIZATION
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 
-U main%b		main.adb		b3ed2c01 NE OO SU
+U main%b		main.adb		7fc66708 NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
-W ada.numerics%s	a-numeri.ads		a-numeri.ali
-W ada.numerics.float_random%s  a-nuflra.adb	a-nuflra.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 Z system.concat_2%s	s-conca2.adb		s-conca2.ali
@@ -30,8 +25,6 @@ D a-except.ads		20210520051128 946f3014 ada.exceptions%s
 D a-flteio.ads		20210520051128 e18a47a0 ada.float_text_io%s
 D a-inteio.ads		20210520051128 f64b89a4 ada.integer_text_io%s
 D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
-D a-numeri.ads		20210520051130 84bea7a3 ada.numerics%s
-D a-nuflra.ads		20210520051130 4056ab7a ada.numerics.float_random%s
 D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
 D a-string.ads		20210520051130 90ac6797 ada.strings%s
 D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
@@ -43,7 +36,7 @@ D a-tiinio.ads		20210520051130 390edddb ada.text_io.integer_io%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
-D main.adb		20221019063550 4a8e9c12 main%b
+D main.adb		20221019065644 c6f37c61 main%b
 D system.ads		20210520051136 2ffa5114 system%s
 D s-conca2.ads		20210520051132 02a0d7d0 system.concat_2%s
 D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
@@ -53,7 +46,6 @@ D s-imagei.ads		20210520051134 0d3f86a7 system.image_i%s
 D s-imgint.ads		20210520051134 bdb6f5ec system.img_int%s
 D s-parame.ads		20210520051134 4752c4cb system.parameters%s
 D s-putima.ads		20210520051134 4e095881 system.put_images%s
-D s-rannum.ads		20210520051134 c3978523 system.random_numbers%s
 D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
 D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
 D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
@@ -67,30 +59,47 @@ D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
 G a e
 G c Z b b [main standard 6 11 none]
 X 1 ada.ads
-16K9*Ada 20e8 19|1r6 1r23 2r6 2r31 3r6 3r29 4r6 4r37
+16K9*Ada 20e8 17|2r6 2r31 3r6 3r31 4r6 4r31 60r11 62r7 63r7
 X 3 a-flteio.ads
-20K13*Float_Text_IO[14|46] 19|3w10 3r33
+20K13*Float_Text_IO[12|46] 17|4w10 4r35 62r11
 X 4 a-inteio.ads
-18K13*Integer_Text_IO[15|46] 19|2w10 2r35
-X 6 a-numeri.ads
-16K13*Numerics 35e17 19|4r10 4r41
-X 7 a-nuflra.ads
-41K22*Float_Random 74e30 19|4w19 4r50
-47R9*Generator<29|65R9> 19|7r7
-49F12*Uniformly_Distributed{float}
-51V13*Random{49F12}<29|73p13> 19|39s31
-53U14*Reset<29|103p14> 19|37s4
-X 13 a-textio.ads
-58K13*Text_IO 725e16 19|1w10 1r27
-506U14*Put_Line 19|38s4 41s7 44s10 46s10 54s4
-X 15 a-tiinio.ads
-59U14*Get 19|42s7[4|18]
-X 19 main.adb
-6U11*Main 6b11 56l5 56t9
-7r4 G{7|47R9} 37r10 39r38
-8i4 Numero_Al_Azar{integer} 39m4 43r20 45r23 54r85
-9i4 Entrada{integer} 42m11 43r10 45r13
-10b4 Victoria{boolean} 48m10 51r60 54r16
-11i4 Oportunidad_Actual{integer} 50m7 50r28 51r18
-12i4 Max_Oportunidades{integer} 51r37
+18K13*Integer_Text_IO[13|46] 17|3w10 3r35
+X 11 a-textio.ads
+58K13*Text_IO 725e16 17|2w10 2r35 60r15 63r11
+87I12*Field{integer}
+506U14*Put_Line 17|63s19 153s7 154s7
+X 12 a-tiflio.ads
+82U14*Put 17|62s25[3|20]
+84i7 Fore{11|87I12} 17|62r47[3|20]
+86i7 Exp{11|87I12} 17|62r37[3|20]
+X 17 main.adb
+6U11*Main 6b11 156l5 156t9
+14V13 Exponente{float} 14b13 14>24 14>40 35l8 35t17
+14i24 Base{integer} 22r24 25r27 27r42
+14i40 Exp{integer} 17r11 21r11 26r21 30r11
+15f7 Resultado{float} 25m7 27m10 27r23 31r23 34r14
+26i11 I{integer}
+39V13 Resta{integer} 39b13 40>7 40>31 40<53 48l8 48t13
+40i7 Izquierda{integer} 45r20
+40i31 Derecha{integer} 45r32
+40b53 Negativo{boolean} 46m7
+43i7 Resultado{integer} 45m7 46r21 47r14
+51V13 Resta{integer} 51b13 51>20 51>44 55l8 55t13
+51i20 Izquierda{integer} 54r14
+51i44 Derecha{integer} 54r26
+59U14 Show_Float 59b14 59>26 65l8 65t18 68r47
+59f26 Value{float} 62r30
+68U14 Put_Line=68:47
+68f24 Value{float}
+71U14 Swap_Integers 71b14 71=29 71=54 78l8 78t21
+71i29 Param1{integer} 75r17 76m7
+71i54 Param2{integer} 76r17 77m7
+73i7 Aux{integer} 75m7 77r17
+81U14 MayorMenor 81b14 82>7 82>29 82<47 83<7 88l8 88t18 150s7
+82i7 Valor1{integer} 86r21 86r43 87r21 87r43
+82i29 Valor2{integer} 86r30 86r55 87r30 87r55
+82i47 Mayor{integer} 86m7 151r42
+83i7 Menor{integer} 87m7 152r10
+147i7 Supuesto_Mayor{integer} 151r26 151m51 153r28
+148i7 Supuesto_Menor{integer} 151r10 152m51 154r28
 

@@ -255,9 +255,9 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   C:\GNAT\2021\bin\03iteraciones\obj\main.o
-   --   -LC:\GNAT\2021\bin\03iteraciones\obj\
-   --   -LC:\GNAT\2021\bin\03iteraciones\obj\
+   --   C:\GNAT\ADA\03iteraciones\obj\main.o
+   --   -LC:\GNAT\ADA\03iteraciones\obj\
+   --   -LC:\GNAT\ADA\03iteraciones\obj\
    --   -LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
    --   -static
    --   -lgnat

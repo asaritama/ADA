@@ -1,59 +1,57 @@
 V "GNAT Lib v2021"
-M P W=b
 A -gnatA
 A -mtune=generic
 A -march=x86-64
-P ZX
+P SS ZX
 
 RN
-RV NO_DIRECT_BOOLEAN_OPERATORS
-RV NO_FLOATING_POINT
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
 RV NO_IO
+RV NO_SECONDARY_STACK
 RV NO_STANDARD_STORAGE_POOLS
-RV NO_DEFAULT_INITIALIZATION
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 
-U main%b		main.adb		b3ed2c01 NE OO SU
+U io%b			io.adb			6e1fdba1 NE OO PK IU
 W ada%s			ada.ads			ada.ali
-W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
-W ada.numerics%s	a-numeri.ads		a-numeri.ali
-W ada.numerics.float_random%s  a-nuflra.adb	a-nuflra.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.fixed%s	a-strfix.adb		a-strfix.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
-Z system.concat_2%s	s-conca2.adb		s-conca2.ali
-Z system.img_int%s	s-imgint.ads		s-imgint.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.val_int%s	s-valint.ads		s-valint.ali
+
+U io%s			io.ads			41c05308 EE NE OO PK IU
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 
 D ada.ads		20210520051132 76789da1 ada%s
+D a-charac.ads		20210520051128 2d3ec45b ada.characters%s
+D a-chlat1.ads		20210520051128 66457d31 ada.characters.latin_1%s
 D a-except.ads		20210520051128 946f3014 ada.exceptions%s
-D a-flteio.ads		20210520051128 e18a47a0 ada.float_text_io%s
 D a-inteio.ads		20210520051128 f64b89a4 ada.integer_text_io%s
 D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
-D a-numeri.ads		20210520051130 84bea7a3 ada.numerics%s
-D a-nuflra.ads		20210520051130 4056ab7a ada.numerics.float_random%s
 D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
 D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-strfix.ads		20210520051130 aeacf44c ada.strings.fixed%s
+D a-strmap.ads		20210520051130 5a88892a ada.strings.maps%s
 D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
 D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
 D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
 D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
-D a-tiflio.ads		20210520051130 fcca4daa ada.text_io.float_io%s
 D a-tiinio.ads		20210520051130 390edddb ada.text_io.integer_io%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
-D main.adb		20221019063550 4a8e9c12 main%b
+D io.ads		20221019102730 41c05308 io%s
+D io.adb		20221019102656 496047bb io%b
 D system.ads		20210520051136 2ffa5114 system%s
-D s-conca2.ads		20210520051132 02a0d7d0 system.concat_2%s
 D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
 D s-exctab.ads		20210520051132 54135002 system.exception_table%s
 D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
-D s-imagei.ads		20210520051134 0d3f86a7 system.image_i%s
-D s-imgint.ads		20210520051134 bdb6f5ec system.img_int%s
 D s-parame.ads		20210520051134 4752c4cb system.parameters%s
 D s-putima.ads		20210520051134 4e095881 system.put_images%s
-D s-rannum.ads		20210520051134 c3978523 system.random_numbers%s
 D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
 D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
 D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
@@ -62,35 +60,41 @@ D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
 D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
 D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
 D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D s-valint.ads		20210520051134 e7fcadb7 system.val_int%s
+D s-valuns.ads		20210520051134 dac7b45d system.val_uns%s
+D s-valuei.ads		20210520051134 978dd0a6 system.value_i%s
+D s-valueu.ads		20210520051134 7b8fccf5 system.value_u%s
 D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
 D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
 G a e
-G c Z b b [main standard 6 11 none]
+G c Z s b [get_notempty_line io 3 13 none]
+G c Z s b [try_get_integer io 7 13 none]
+G c Z s b [get_integer io 10 13 none]
 X 1 ada.ads
-16K9*Ada 20e8 19|1r6 1r23 2r6 2r31 3r6 3r29 4r6 4r37
-X 3 a-flteio.ads
-20K13*Float_Text_IO[14|46] 19|3w10 3r33
-X 4 a-inteio.ads
-18K13*Integer_Text_IO[15|46] 19|2w10 2r35
-X 6 a-numeri.ads
-16K13*Numerics 35e17 19|4r10 4r41
-X 7 a-nuflra.ads
-41K22*Float_Random 74e30 19|4w19 4r50
-47R9*Generator<29|65R9> 19|7r7
-49F12*Uniformly_Distributed{float}
-51V13*Random{49F12}<29|73p13> 19|39s31
-53U14*Reset<29|103p14> 19|37s4
-X 13 a-textio.ads
-58K13*Text_IO 725e16 19|1w10 1r27
-506U14*Put_Line 19|38s4 41s7 44s10 46s10 54s4
-X 15 a-tiinio.ads
-59U14*Get 19|42s7[4|18]
-X 19 main.adb
-6U11*Main 6b11 56l5 56t9
-7r4 G{7|47R9} 37r10 39r38
-8i4 Numero_Al_Azar{integer} 39m4 43r20 45r23 54r85
-9i4 Entrada{integer} 42m11 43r10 45r13
-10b4 Victoria{boolean} 48m10 51r60 54r16
-11i4 Oportunidad_Actual{integer} 50m7 50r28 51r18
-12i4 Max_Oportunidades{integer} 51r37
+16K9*Ada 20e8 20|1r6 1r31 2r6 2r31 3r6 3r31 4r6 4r31
+X 5 a-inteio.ads
+18K13*Integer_Text_IO[15|46] 20|4w10 4r35
+X 8 a-string.ads
+16K13*Strings 35e16 20|2r10 2r35 3w10 3r35
+33n37*Both{33E9} 20|18r64
+X 9 a-strfix.ads
+43K21*Fixed 1398e22 20|2w18 2r43
+1097V13*Trim{string} 20|18s49
+X 14 a-textio.ads
+58K13*Text_IO 725e16 20|1w10 1r35
+493V13*Get_Line{string} 20|15s33 34s31
+506U14*Put_Line 20|28s10 50s10
+X 19 io.ads
+1K9*IO 14l5 14e7 20|6b14 55l5 55t7
+3V13*Get_NotEmpty_Line{string} 4>7 20|8b13 30l8 30t25
+4a7 ErrorMessage{string} 20|9b7 28r20
+7V13*Try_Get_Integer{boolean} 8<7 20|32b13 39l8 39t23 49s29
+8i7 Value{integer} 20|32b30 34m7
+10V13*Get_Integer{integer} 11>7 20|41b13 53l8 53t19
+11a7 ErrorMessage{string} 20|42b7 50r20
+X 20 io.adb
+15a13 Entrada{string} 18r55
+18a16 Entrada_Sin_Espacios{string} 23r20 24r26
+45b7 EntradaCorrecta{boolean} 48r18 49m10
+46i7 Value{integer} 49m46 49r46 52r14
 

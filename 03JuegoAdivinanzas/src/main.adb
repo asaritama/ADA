@@ -33,7 +33,7 @@ begin
    --     end if;
    --  end loop;
    -----------------------------------------------------------------------
-   -- Ejercicio hecho en clase
+   -- Ejercicio hecho en clase.
    Reset(G);
    Put_Line("Juego de Adivina el número secreto ");
    Numero_Al_Azar := Integer((Random(G)* 99.0)+1.0);
@@ -51,7 +51,6 @@ begin
       exit when (Oportunidad_Actual>Max_Oportunidades) or (Victoria);
    end loop;
 
-   Put_Line(if Victoria then "Ganaste" else "Perdiste");
-   Put_Line("El número que pensé era el" & Numero_Al_Azar'Image);
+   Put_Line(if Victoria then "Ganaste" else "Perdiste, el número que pensé es el" & Numero_Al_Azar'Image);
 
 end Main;

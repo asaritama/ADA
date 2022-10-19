@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project>
+    <vfs_file />
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\GNAT\ADA\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\GNAT\ADA\05Paquetes\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 9" >
+      <vfs_project>C:\GNAT\ADA\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\GNAT\ADA\05Paquetes\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 3" >
+      <vfs_project>C:\GNAT\ADA\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\GNAT\ADA\05Paquetes\src\constantes.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 11" >
+      <vfs_project>C:\GNAT\ADA\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\GNAT\ADA\05Paquetes\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 3" >
+      <vfs_project>C:\GNAT\ADA\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\GNAT\ADA\05Paquetes\src\indra-io.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 6" >
+      <vfs_project>C:\GNAT\ADA\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\GNAT\ADA\05Paquetes\src\indra-io.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 3" >
+      <vfs_project>C:\GNAT\ADA\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\GNAT\ADA\05Paquetes\src\indra-io.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\GNAT\ADA\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\GNAT\ADA\05Paquetes\src\Io.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\GNAT\ADA\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\GNAT\ADA\05Paquetes\src\io.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\GNAT\ADA\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\GNAT\ADA\05Paquetes\src\Io.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\GNAT\ADA\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\GNAT\ADA\05Paquetes\src\io.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\GNAT\ADA\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\GNAT\ADA\05Paquetes\src\Io.ads</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project>C:\GNAT\ADA\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\GNAT\ADA\05Paquetes\src\io.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>

@@ -1,17 +1,19 @@
 [GENERATED OBJECT FILE]
 b__main.o
 [PROJECT FILES]
-C:\GNAT\ADA\03iteraciones\iteraciones.gpr
-20221017081236 5659fa96bf710328cc5795b4bb201cac
+C:\GNAT\ADA\05Paquetes\paquete.gpr
+20221019072354 1dc0bf19642fd150e45dbc03954d58c8
 [BOUND OBJECT FILES]
-C:\GNAT\ADA\03iteraciones\obj\main.o
+C:\GNAT\ADA\05Paquetes\obj\constantes.o
+C:\GNAT\ADA\05Paquetes\obj\io.o
+C:\GNAT\ADA\05Paquetes\obj\main.o
 [GENERATED SOURCE FILES]
 b__main.ads
 b__main.adb
 b__main.ali
 [RESULTING OPTIONS]
--LC:\GNAT\ADA\03iteraciones\obj\
--LC:\GNAT\ADA\03iteraciones\obj\
+-LC:\GNAT\ADA\05Paquetes\obj\
+-LC:\GNAT\ADA\05Paquetes\obj\
 -LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
 -static
 -static-libgcc

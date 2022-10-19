@@ -6,7 +6,7 @@ procedure Main is
    Sumatoria : Integer := 0;
 begin
    --Algoritmo que calcula la sumatoria de valores hasta que el usuario
-   --introduzca un 0.
+   --introduzca un 0. (BUCLE LOOP)
    --  Put_Line("Ingrese valores. Un 0 para finalizar la carga.");
    --  Put_Line("Se calculará la sumatoria");
    --  loop
@@ -127,7 +127,7 @@ begin
    --     end loop;
    --  end;
    ----------------------------------------------------------------
-   --Programa que genera números eneteros al azar entre 1.0 y 10.0
+   --Programa que genera 20 números enteros al azar entre 1.0 y 10.0
    declare
       G: Generator;
       Numero_Al_Azar : Integer;
