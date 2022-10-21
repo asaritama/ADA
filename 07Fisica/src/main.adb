@@ -1,33 +1,39 @@
-
-procedure Main is
-
-   function Posicion_Final(Distancia : Integer; Velocidad_Inicial : Integer; Tiempo_Transcurrido : Integer) returns Distancia is
-      Posicion_Inicial : Integer;
-   begin
-      Posicion_Inicial := Distancia + (Velocidad_Inicial * Tiempo_Transcurrido);
-   end Posicion_Final;
-
-begin
-   --Crear una librería que se llama Física
+with Ada.Text_IO; use Ada.Text_IO;
+with Ada.Float_Text_IO; use Ada.Float_Text_IO;
+--Crear una librería que se llama Física
    --Definir  los siguientes tipos de datos de esa librería.
    --Distancia
+   --Velocidad
    --Tiempo
    --Aceleración
    --Agregar un metodo  que calcula la posición velocidad de un movil
    --despues de x tiempo.
-   --vf = vinicial + 1/2 * a * t^2
+   --Xf = X0 + Vinicial + 1/2 * t +1/2 * a * t^2
    --function Posicion_Final(Distancia, Velocidad_Inicial, Tiempo_Transcurrido) returns Distancia;
+procedure Main is
+   type Distancias is new Float;
+   type Velocidades is new Float;
+   type Tiempos is new Float;
+   type Aceleraciones is new Float;
+   type Posicion_Final is new Float;
+   subtype Distancia_Final is Distancias;
 
-   Valor_Distancia : Integer;
-   Valor_Velocidad : Integer;
-   Valor_Tiempo : Integer;
-   Resultado : Integer;
+
+   function Formula(Distancia_Inicial : Distancias; Velocidad_Movil : Velocidades; Tiempo_Transcurrido : Tiempos; Aceleracion : Aceleraciones) return Distancia_Final is
    begin
-      Valor_Distancia := 8;
-      Valor_Velocidad := 7;
-      Resultado := Posicion_Inicial (Valor_Distancia, Valor_Velocidad, Velocidad_Tiempo);
-      Put_Line("La posición inicial es igual a " & Resultado'Image);
+     return Distancia_Final(Float(Distancia_Inicial)+ Float(Velocidad_Movil) + 1.0/2.0 * Float(Tiempo_Transcurrido) + 1.0/2.0 * Float(Aceleracion) * Float(Tiempo_Transcurrido**2));
+   end Formula;
 
+begin
+   declare
+      D: Distancias := 2.0;
+      V: Velocidades := 3.2;
+      T: Tiempos := 12.0;
+      A: Aceleraciones := 3.0;
+      Resultado : Distancia_Final;
+   begin
+       Resultado := Formula(D,V,T,A);
+      Put_Line("Resultado es "& Resultado'Image);
    end;
 
 
