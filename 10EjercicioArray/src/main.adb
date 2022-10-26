@@ -5,21 +5,41 @@ with paquetes; use paquetes;
 
 procedure Main is
 
+
    type Persona  is record
          Nombre : Unbounded_String;
          Apellido : Unbounded_String;
          Edad : Integer range 1..100;
    end record;
 
+   type Array_Personas is array (Positive range <>) of Persona;
 
    Longitud_Ingresada : Integer;
+
 begin
    Put_Line ("¿Cuantos personas desea ingresar?");
-   Longitud_Ingresada := Integer'Value (Get_Line);
-   for I in 1..Longitud_Ingresada'Range loop
+   Longitud_Ingresada := Get_Integer;
+   Put_Line("");
+   declare
+      Personas : Array_Personas(1..Longitud_Ingresada);
 
-   end loop;
+   begin
+      for I in Personas'Range loop
+         Put_Line("Persona "& I'Image);
+         Put_Line("Ingrese Nombre: ");
+         Personas(I).Nombre := To_Unbounded_String(Get_Line);
+         Put_Line("Ingrese Apellido: ");
+         Personas(I).Apellido := To_Unbounded_String(Get_Line);
+         Put_Line("Ingrese Edad: ");
+         Personas(I).Edad := Get_Integer;
+      end loop;
 
-
+      for index in Personas'Range loop
+         Put_Line("");
+         Put(to_String(Personas(index).Nombre));
+         Put(" "& To_String(Personas(index).Apellido));
+         Put(Personas(index).Edad'Image);
+      end loop;
+   end;
 
 end Main;
