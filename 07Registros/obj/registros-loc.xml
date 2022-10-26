@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Locations>
+  <Project>
+    <vfs_file>C:\GNAT\ADA\07Registros\registros.gpr</vfs_file>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>C:\GNAT\ADA\07Fisica\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 68" line=" 29" >
+      <vfs_project />
+      <vfs_file>C:\GNAT\ADA\07Fisica\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 99" line=" 19" >
+      <vfs_project />
+      <vfs_file>C:\GNAT\ADA\07Fisica\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 23" line=" 8" >
+      <vfs_project />
+      <vfs_file>C:\GNAT\ADA\07Fisica\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 47" line=" 4" >
+      <vfs_project />
+      <vfs_file>C:\GNAT\ADA\07Fisica\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 25" line=" 26" >
+      <vfs_project />
+      <vfs_file>C:\GNAT\ADA\07Fisica\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 108" line=" 4" >
+      <vfs_project />
+      <vfs_file>C:\GNAT\ADA\07Fisica\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\GNAT\ADA\07Registros\registros.gpr</vfs_project>
+      <vfs_file>C:\GNAT\ADA\07Registros\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 18" >
+      <vfs_project>C:\GNAT\ADA\07Registros\registros.gpr</vfs_project>
+      <vfs_file>C:\GNAT\ADA\07Registros\src\main.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>
