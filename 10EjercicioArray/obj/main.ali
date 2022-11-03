@@ -20,7 +20,7 @@ RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_IMPLICIT_LOOPS
 
-U main%b		main.adb		81c6cb8a NE OO SU
+U main%b		main.adb		c4a37c15 NE OO SU
 W ada%s			ada.ads			ada.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
@@ -57,8 +57,8 @@ D a-tiinio.ads		20210520051130 390edddb ada.text_io.integer_io%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
-D main.adb		20221026133632 94ebee89 main%b
-D paquetes.ads		20221026132334 4ea02bed paquetes%s
+D main.adb		20221026134148 d18e5916 main%b
+D paquetes.ads		20221026134220 4ea02bed paquetes%s
 D system.ads		20210520051136 2ffa5114 system%s
 D s-atocou.ads		20210520051132 b45c2d8d system.atomic_counters%s
 D s-conca2.ads		20210520051132 02a0d7d0 system.concat_2%s
@@ -89,36 +89,36 @@ G a e
 G c Z b b [main standard 6 11 none]
 G r c none [main standard 6 11 none] [get_integer paquetes 7 13 none]
 X 1 ada.ads
-16K9*Ada 20e8 20|1r6 1r23 2r6 2r31 3r6 3r33
+16K9*Ada 20e8 20|1r6 1r33 2r6 2r33 3r6 3r33
 X 6 a-inteio.ads
-18K13*Integer_Text_IO[16|46] 20|2w10 2r35
+18K13*Integer_Text_IO[16|46] 20|2w10 2r37
 X 9 a-string.ads
 16K13*Strings 35e16 20|3r10 3r37
 X 12 a-strunb.ads
 83K21*Unbounded 765e26 20|3w18 3r45
-88R9*Unbounded_String<5|43R9> 744e15 20|10r19 11r21
-104V13*To_Unbounded_String{88R9} 20|30s32 32s34
-117V13*To_String{string} 20|39s14 40s19
+88R9*Unbounded_String<5|43R9> 744e15 20|9r18 10r18
+104V13*To_Unbounded_String{88R9} 20|28s33 30s35
+117V13*To_String{string} 20|37s15 38s21
 X 15 a-textio.ads
-58K13*Text_IO 725e16 20|1w10 1r27
-463U14*Put 20|39s10 40s10 41s10
-493V13*Get_Line{string} 20|30s52 32s54
-506U14*Put_Line 20|20s4 22s4 28s10 29s10 31s10 33s10 38s10
+58K13*Text_IO 725e16 20|1w10 1r37
+463U14*Put 20|37s10 38s10 39s10
+493V13*Get_Line{string} 20|28s54 30s56
+506U14*Put_Line 20|19s4 26s10 27s10 29s10 31s10 36s10
 X 20 main.adb
-6U11*Main 6b11 45l5 45t9
-9R9 Persona 13e14 15r56
-10r10 Nombre{12|88R9} 30m22 39r40
-11r10 Apellido{12|88R9} 32m22 40r45
-12i10 Edad{integer} 34m22 41r30
-15A9 Array_Personas(9R9)<integer> 24r18
-17i4 Longitud_Ingresada{integer} 21m4 24r36
-24a7 Personas{15A9} 27r16 30m10 30r10 32m10 32r10 34m10 37r20 39r24 40r29
-. 41r14
-27i11 I{integer} 28r31 30r19 32r19 34r19
-37i11 index{integer} 39r33 40r38 41r23
+6U11*Main 6b11 43l5 43t9
+8R9 Persona 12e14 14r56
+9r7 Nombre{12|88R9} 28m23 37r43
+10r7 Apellido{12|88R9} 30m23 38r49
+11i7 Edad{integer} 32m23 39r32
+14A9 Array_Personas(8R9)<integer> 22r18
+16i4 Longitud_Ingresada{integer} 20m4 22r39
+22a7 Personas{14A9} 25r16 28m10 28r10 30m10 30r10 32m10 35r20 37r26 38r32
+. 39r15
+25i11 I{integer} 26r33 28r20 30r20 32r20
+35i11 index{integer} 37r36 38r42 39r25
 X 21 paquetes.ads
-2K9*paquetes 20|4w6 4r20 21|12e13
-7V13*Get_Integer{integer} 20|21s26 34s30
+2K9*paquetes 20|4w6 4r33 21|12e13
+7V13*Get_Integer{integer} 20|20s26 32s31
 X 22 system.ads
 67M9*Address
 X 32 s-memory.ads

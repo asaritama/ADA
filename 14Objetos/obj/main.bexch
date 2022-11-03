@@ -1,0 +1,20 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+C:\GNAT\ADA\14Objetos\objetos.gpr
+20221102080736 4dd54c619f8c4720fd2c012c9e77adc7
+[BOUND OBJECT FILES]
+C:\GNAT\ADA\14Objetos\obj\personaje.o
+C:\GNAT\ADA\14Objetos\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LC:\GNAT\ADA\14Objetos\obj\
+-LC:\GNAT\ADA\14Objetos\obj\
+-LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

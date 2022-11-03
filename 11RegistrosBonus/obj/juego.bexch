@@ -1,0 +1,22 @@
+[MAPPING FILE]
+C:\Users\ASARIT~1\AppData\Local\Temp\GNAT-TEMP-000005.TMP
+[TOOLCHAIN VERSION]
+ada
+GNAT 2021
+[MAIN BASE NAME]
+juego
+[COMPILER PATH]
+c:\gnat\2021\bin\gcc.exe
+[COMPILER LEADING SWITCHES]
+-c
+-x
+ada
+-gnatA
+[MAIN DEPENDENCY FILE]
+C:\GNAT\ADA\11RegistrosBonus\obj\juego.ali
+[DEPENDENCY FILES]
+[BINDING OPTIONS]
+gnatbind_prefix=
+[PROJECT FILES]
+C:\GNAT\ADA\11RegistrosBonus\registros.gpr
+20221103203556 5034e62a19f1502a7a82e02214fcb6e4

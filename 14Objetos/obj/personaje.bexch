@@ -1,0 +1,22 @@
+[MAPPING FILE]
+C:\Users\ASARIT~1\AppData\Local\Temp\GNAT-TEMP-000005.TMP
+[TOOLCHAIN VERSION]
+ada
+GNAT 2021
+[MAIN BASE NAME]
+personaje
+[COMPILER PATH]
+c:\gnat\2021\bin\gcc.exe
+[COMPILER LEADING SWITCHES]
+-c
+-x
+ada
+-gnatA
+[MAIN DEPENDENCY FILE]
+C:\GNAT\ADA\14Objetos\obj\personaje.ali
+[DEPENDENCY FILES]
+[BINDING OPTIONS]
+gnatbind_prefix=
+[PROJECT FILES]
+C:\GNAT\ADA\14Objetos\objetos.gpr
+20221102072728 0f2718209109c31aaab8becdca5ddc8d

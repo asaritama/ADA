@@ -1,0 +1,21 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+C:\GNAT\ADA\11RegistrosBonus\registros.gpr
+20221103203556 5034e62a19f1502a7a82e02214fcb6e4
+[BOUND OBJECT FILES]
+C:\GNAT\ADA\11RegistrosBonus\obj\io.o
+C:\GNAT\ADA\11RegistrosBonus\obj\juego.o
+C:\GNAT\ADA\11RegistrosBonus\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LC:\GNAT\ADA\11RegistrosBonus\obj\
+-LC:\GNAT\ADA\11RegistrosBonus\obj\
+-LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

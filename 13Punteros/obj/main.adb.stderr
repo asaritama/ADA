@@ -1,0 +1,1 @@
+main.adb:3:48: error: a generic package is not allowed in a use clause
