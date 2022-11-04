@@ -1,6 +1,7 @@
 with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Float_Text_IO; use Ada.Float_Text_IO;
 with Figuras; use Figuras;
+
 procedure Main is
    --Figuras!
    --Va de lo siguiente
@@ -17,7 +18,8 @@ procedure Main is
    Figura_Uno : Figura;
 
 begin
-   Figura_Uno := Create_Rectangulo("Rect");
+   Figura_Uno := Create_Rectangulo("REctangulo 1");
+   Figura_Uno := Get_Altura(2.0);
+   Figura_Uno := Get_Base(3.0);
    Figura_Uno.Calcular_Area;
-   null;
 end Main;

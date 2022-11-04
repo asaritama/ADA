@@ -1,0 +1,4 @@
+main.adb:22:29: error: expected private type "Clase_Rectangulo" defined at figuras.ads:13
+main.adb:22:29: error: found type universal real
+main.adb:23:27: error: expected private type "Clase_Rectangulo" defined at figuras.ads:13
+main.adb:23:27: error: found type universal real
